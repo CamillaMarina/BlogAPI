@@ -1,13 +1,13 @@
 {
   "name": "blogapi",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "API de um Blog básico",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx watch src/server.ts"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["blog", "api", "express", "typescript", "prisma", "node"],
+  "author": "Camilla Marina",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
