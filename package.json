@@ -6,9 +6,16 @@
   "scripts": {
     "dev": "tsx watch src/server.ts"
   },
-  "keywords": ["blog", "api", "express", "typescript", "prisma", "node"],
+  "keywords": [
+    "blog",
+    "api",
+    "express",
+    "typescript",
+    "prisma",
+    "node"
+  ],
   "author": "Camilla Marina",
-  "license": "ISC",
+  "license": "MIT",
   "type": "commonjs",
   "devDependencies": {
     "@types/cors": "^2.8.19",
@@ -22,6 +29,7 @@
     "typescript": "^6.0.3"
   },
   "dependencies": {
+    "@prisma/client": "^6.19.3",
     "bcryptjs": "^3.0.3",
     "body-parser": "^2.2.2",
     "cors": "^2.8.6",
