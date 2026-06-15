@@ -1,6 +1,6 @@
 import { RequestHandler } from "express"
 import { email, z } from "zod"
-import { createUser } from "../services/user.service"
+import { createUser, verifyUser } from "../services/user.service"
 import { createToken } from "../services/auth.service"
 
 export const signIn: RequestHandler = async (req, res) => {
