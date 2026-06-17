@@ -1,7 +1,8 @@
-import { RequestHandler } from "express"
+import { RequestHandler, Response } from "express"
 import { email, z } from "zod"
 import { createUser, verifyUser } from "../services/user.service"
 import { createToken } from "../services/auth.service"
+import { ExtendedRequest } from "../types/extended-request"
 
 export const signIn: RequestHandler = async (req, res) => {
 	const schema = z.object({
@@ -61,6 +62,10 @@ export const signUp: RequestHandler = async (req, res) => {
 	})
 }
 
-export const validate: RequestHandler = (req, res) => {
-	// Lógica para validar o token de autenticação
+export const validate: RequestHandler = async (
+	req: ExtendedRequest, 
+	res: Response
+) => {
+	console.log(req.user)
+	res.json({ user: req.user })
 }
