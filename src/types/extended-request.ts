@@ -5,4 +5,5 @@ type UserWithoutPassword = Omit<User, 'password'>
 
 export type ExtendedRequest = Request & {
     user?: UserWithoutPassword
+    file?: Express.Multer.File
 }
